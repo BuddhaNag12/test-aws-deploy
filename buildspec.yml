@@ -30,13 +30,11 @@ version: 0.2
 phases:
  install:
     runtime-versions:
-      nodejs: 20 # Specify the Node.js version you need
+      nodejs: 20.14.0 # Specify the Node.js version you need
     commands:
-      - echo Installing dependencies...
       - npm install
   build:
     commands:
-      - echo Building the React app...
       - npm run build
     
   # pre_build:
