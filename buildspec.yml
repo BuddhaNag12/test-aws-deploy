@@ -7,7 +7,7 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
-      
+
   build:
     commands:
       - echo Building the React app...
@@ -15,7 +15,7 @@ phases:
 
 artifacts:
   files:
-    - '**/*'
+    - '**/dist/*'
   base-directory: build
   discard-paths: yes
 
